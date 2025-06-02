@@ -26,9 +26,7 @@ A simple yet effective academic planner built using **Flask**, designed for stud
 
 ---
 
-## 📷 Screenshots
 
-> Add screenshots here if available (e.g., home page, add task form, etc.)
 
 ---
 
@@ -47,21 +45,25 @@ academic-planner/
 │
 ├── planner.db # SQLite database file (auto-created)
 └── README.md # Project info
-Create and activate virtual environment (optional but recommended)
+1)Create and activate virtual environment (optional but recommended)
 
 
-python -m venv venv
+: python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies
+2)Install dependencies
 
 
 pip install flask
-Run the app
+3)Run the app
 
 
 
 python app.py
-Open http://127.0.0.1:5000 in your browser.
+4)Open http://127.0.0.1:5000 in your browser.
+
+
+
+
 📝 Future Enhancements
 User authentication (login/signup)
 
