@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Task</title>
+</head>
+<body>
+    <h2>Update Task</h2>
+    <form method="POST">
+        Title: <input type="text" name="title" value="{{ task.title }}"><br>
+        Priority: 
+        <select name="priority">
+            <option {% if task.priority == 'High' %}selected{% endif %}>High</option>
+            <option {% if task.priority == 'Medium' %}selected{% endif %}>Medium</option>
+            <option {% if task.priority == 'Low' %}selected{% endif %}>Low</option>
+        </select><br>
+        Due Date: <input type="date" name="due_date" value="{{ task.due_date }}"><br>
+        <label><input type="checkbox" name="is_complete" {% if task.is_complete %}checked{% endif %}> Mark as Complete</label><br>
+        <input type="submit" value="Update Task">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Tasks</a>
+</body>
+</html>

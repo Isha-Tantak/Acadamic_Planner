@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Task</title>
+</head>
+<body>
+    <h2>Add Academic Task</h2>
+    <form method="POST">
+        Title: <input type="text" name="title" required><br>
+        Priority: <select name="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select><br>
+        Due Date: <input type="date" name="due_date"><br>
+        <input type="submit" value="Add Task">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Tasks</a>
+</body>
+</html>
